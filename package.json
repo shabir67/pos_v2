@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/shabir67/pos_v2/issues"
   },
-  "homepage": "https://github.com/shabir67/pos_v2#readme"
+  "homepage": "https://github.com/shabir67/pos_v2#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
 }
