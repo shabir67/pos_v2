@@ -1,0 +1,24 @@
+{
+  "name": "pos_v2",
+  "version": "1.0.0",
+  "description": "Aplikasi rest API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shabir67/pos_v2.git"
+  },
+  "keywords": [
+    "rest",
+    "api",
+    "nodejs"
+  ],
+  "author": "shobir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shabir67/pos_v2/issues"
+  },
+  "homepage": "https://github.com/shabir67/pos_v2#readme"
+}
