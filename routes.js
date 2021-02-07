@@ -3,6 +3,6 @@
 module.exports = function(app) {
     var json1 = require('./controller');
 
-    app.routes('/')
-        .gets(json1.index);
+    app.route('./')
+        app.gets(json1.index);
 }
