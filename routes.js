@@ -4,5 +4,11 @@ module.exports = function(app) {
     var jsonku = require('./controller');
 
     app.route('/')
-        .gets(jsonku.index);
+        .get(jsonku.index);
+
+    app.route('/tampil')
+        .get(jsonku.tampildatauser);
+
+    app.route('/tampil/:id')
+        .get(jsonku.tampilberdasarkanid);
 }
