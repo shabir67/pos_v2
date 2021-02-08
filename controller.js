@@ -31,3 +31,21 @@ exports.tampilberdasarkanid = function(req,res){
             }
         });
 };
+
+//menambahkan data mahasiswa
+exports.tambahuser = function(req,res){
+    var ei_numb = req.body.ei_numb;
+    var name = req.body.name;
+    var section = req.body.section;
+    var cp = req.body.cp;
+
+    connection.query('INSERT INTO user (ei_numb,name,section,cp) VALUES (?,?,?,?)',
+    [ei_numb,name,section,cp],
+    function (error, rows, fields){
+        if(error){
+            console.log(error);
+        }else {
+            response.ok("Berhasil menambahkan data!",res)
+        }
+    });
+};
