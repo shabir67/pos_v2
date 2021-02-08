@@ -67,3 +67,16 @@ exports.ubahuser =  function(req,res){
             }
         });
 };
+
+//hapus user berdasarkan id
+exports.hapususer = function(req,res){
+    var id = req.body.id;
+    connection.query('DELETE FROM user WHERE id=?',[id],
+    function(error, rows, fields){
+        if(error){
+            console.log(error);
+        }else {
+            response.ok("Berhasil menghapus data",res)
+        }
+    });
+};
