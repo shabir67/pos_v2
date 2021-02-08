@@ -49,3 +49,21 @@ exports.tambahuser = function(req,res){
         }
     });
 };
+
+//mengubah data berdasarkan id
+exports.ubahuser =  function(req,res){
+    var id = req.body.id;
+    var ei_numb = req.body.ei_numb;
+    var name = req.body.name;
+    var section = req.body.section;
+    var cp = req.body.cp;
+
+    connection.query('UPDATE user set ei_numb=?, name=?, section=?, cp=? WHERE id=?', [ei_numb,name,section,cp,id],
+        function(error, rows, fields){
+            if(error){
+                console.log(error);
+            }else {
+                response.ok("Berhasil mengubah data!",res)
+            }
+        });
+};
